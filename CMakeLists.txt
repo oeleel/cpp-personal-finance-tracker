@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.5)
-project(cpp-personal-finance-project CXX)
+project(cpp-fin-proj CXX)
 
 include(CheckIncludeFileCXX)
 

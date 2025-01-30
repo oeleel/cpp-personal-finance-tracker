@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.5)
-project(cpp-personal-finance-project_test CXX)
+project(cpp-fin-proj_test CXX)
 
 add_executable(${PROJECT_NAME} test_main.cc)
 
