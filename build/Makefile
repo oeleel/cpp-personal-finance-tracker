@@ -142,6 +142,30 @@ cpp-fin-proj_test/fast:
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/cpp-fin-proj_test.dir/build.make test/CMakeFiles/cpp-fin-proj_test.dir/build
 .PHONY : cpp-fin-proj_test/fast
 
+controllers/TestCtrl.o: controllers/TestCtrl.cc.o
+.PHONY : controllers/TestCtrl.o
+
+# target to build an object file
+controllers/TestCtrl.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp-fin-proj.dir/build.make CMakeFiles/cpp-fin-proj.dir/controllers/TestCtrl.cc.o
+.PHONY : controllers/TestCtrl.cc.o
+
+controllers/TestCtrl.i: controllers/TestCtrl.cc.i
+.PHONY : controllers/TestCtrl.i
+
+# target to preprocess a source file
+controllers/TestCtrl.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp-fin-proj.dir/build.make CMakeFiles/cpp-fin-proj.dir/controllers/TestCtrl.cc.i
+.PHONY : controllers/TestCtrl.cc.i
+
+controllers/TestCtrl.s: controllers/TestCtrl.cc.s
+.PHONY : controllers/TestCtrl.s
+
+# target to generate assembly for a file
+controllers/TestCtrl.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp-fin-proj.dir/build.make CMakeFiles/cpp-fin-proj.dir/controllers/TestCtrl.cc.s
+.PHONY : controllers/TestCtrl.cc.s
+
 main.o: main.cc.o
 .PHONY : main.o
 
@@ -176,6 +200,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... cpp-fin-proj"
 	@echo "... cpp-fin-proj_test"
+	@echo "... controllers/TestCtrl.o"
+	@echo "... controllers/TestCtrl.i"
+	@echo "... controllers/TestCtrl.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
