@@ -1,0 +1,2 @@
+# Hashes of file build rules.
+c65a7e5415c6c6097470d8b14b163cc5 views/balance.h

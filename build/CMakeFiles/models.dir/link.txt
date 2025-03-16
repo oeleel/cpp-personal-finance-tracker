@@ -1,0 +1,2 @@
+/Library/Developer/CommandLineTools/usr/bin/ar qc libmodels.a CMakeFiles/models.dir/models/Balance.cc.o
+/Library/Developer/CommandLineTools/usr/bin/ranlib libmodels.a

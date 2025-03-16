@@ -53,10 +53,10 @@ RM = /opt/homebrew/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/leolee/desktop/personal_projects/cpp-fin-proj
+CMAKE_SOURCE_DIR = /Users/leolee/Desktop/personal_projects/cpp-fin-proj
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/leolee/desktop/personal_projects/cpp-fin-proj/build
+CMAKE_BINARY_DIR = /Users/leolee/Desktop/personal_projects/cpp-fin-proj/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/cpp-fin-proj.dir/depend.make
@@ -69,53 +69,109 @@ include CMakeFiles/cpp-fin-proj.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/cpp-fin-proj.dir/flags.make
 
+views/balance.h: /Users/leolee/Desktop/personal_projects/cpp-fin-proj/views/balance.csp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/leolee/Desktop/personal_projects/cpp-fin-proj/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating views/balance.h, views/balance.cc"
+	cd /Users/leolee/Desktop/personal_projects/cpp-fin-proj && drogon_ctl create view views/balance.csp -o /Users/leolee/Desktop/personal_projects/cpp-fin-proj/build/views
+
+views/balance.cc: views/balance.h
+	@$(CMAKE_COMMAND) -E touch_nocreate views/balance.cc
+
 CMakeFiles/cpp-fin-proj.dir/codegen:
 .PHONY : CMakeFiles/cpp-fin-proj.dir/codegen
 
 CMakeFiles/cpp-fin-proj.dir/main.cc.o: CMakeFiles/cpp-fin-proj.dir/flags.make
-CMakeFiles/cpp-fin-proj.dir/main.cc.o: /Users/leolee/desktop/personal_projects/cpp-fin-proj/main.cc
+CMakeFiles/cpp-fin-proj.dir/main.cc.o: /Users/leolee/Desktop/personal_projects/cpp-fin-proj/main.cc
 CMakeFiles/cpp-fin-proj.dir/main.cc.o: CMakeFiles/cpp-fin-proj.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/leolee/desktop/personal_projects/cpp-fin-proj/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/cpp-fin-proj.dir/main.cc.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cpp-fin-proj.dir/main.cc.o -MF CMakeFiles/cpp-fin-proj.dir/main.cc.o.d -o CMakeFiles/cpp-fin-proj.dir/main.cc.o -c /Users/leolee/desktop/personal_projects/cpp-fin-proj/main.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/leolee/Desktop/personal_projects/cpp-fin-proj/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/cpp-fin-proj.dir/main.cc.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cpp-fin-proj.dir/main.cc.o -MF CMakeFiles/cpp-fin-proj.dir/main.cc.o.d -o CMakeFiles/cpp-fin-proj.dir/main.cc.o -c /Users/leolee/Desktop/personal_projects/cpp-fin-proj/main.cc
 
 CMakeFiles/cpp-fin-proj.dir/main.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/cpp-fin-proj.dir/main.cc.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/leolee/desktop/personal_projects/cpp-fin-proj/main.cc > CMakeFiles/cpp-fin-proj.dir/main.cc.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/leolee/Desktop/personal_projects/cpp-fin-proj/main.cc > CMakeFiles/cpp-fin-proj.dir/main.cc.i
 
 CMakeFiles/cpp-fin-proj.dir/main.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/cpp-fin-proj.dir/main.cc.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/leolee/desktop/personal_projects/cpp-fin-proj/main.cc -o CMakeFiles/cpp-fin-proj.dir/main.cc.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/leolee/Desktop/personal_projects/cpp-fin-proj/main.cc -o CMakeFiles/cpp-fin-proj.dir/main.cc.s
+
+CMakeFiles/cpp-fin-proj.dir/controllers/BalanceCtrl.cc.o: CMakeFiles/cpp-fin-proj.dir/flags.make
+CMakeFiles/cpp-fin-proj.dir/controllers/BalanceCtrl.cc.o: /Users/leolee/Desktop/personal_projects/cpp-fin-proj/controllers/BalanceCtrl.cc
+CMakeFiles/cpp-fin-proj.dir/controllers/BalanceCtrl.cc.o: CMakeFiles/cpp-fin-proj.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/leolee/Desktop/personal_projects/cpp-fin-proj/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/cpp-fin-proj.dir/controllers/BalanceCtrl.cc.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cpp-fin-proj.dir/controllers/BalanceCtrl.cc.o -MF CMakeFiles/cpp-fin-proj.dir/controllers/BalanceCtrl.cc.o.d -o CMakeFiles/cpp-fin-proj.dir/controllers/BalanceCtrl.cc.o -c /Users/leolee/Desktop/personal_projects/cpp-fin-proj/controllers/BalanceCtrl.cc
+
+CMakeFiles/cpp-fin-proj.dir/controllers/BalanceCtrl.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/cpp-fin-proj.dir/controllers/BalanceCtrl.cc.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/leolee/Desktop/personal_projects/cpp-fin-proj/controllers/BalanceCtrl.cc > CMakeFiles/cpp-fin-proj.dir/controllers/BalanceCtrl.cc.i
+
+CMakeFiles/cpp-fin-proj.dir/controllers/BalanceCtrl.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/cpp-fin-proj.dir/controllers/BalanceCtrl.cc.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/leolee/Desktop/personal_projects/cpp-fin-proj/controllers/BalanceCtrl.cc -o CMakeFiles/cpp-fin-proj.dir/controllers/BalanceCtrl.cc.s
+
+CMakeFiles/cpp-fin-proj.dir/controllers/RootCtrl.cc.o: CMakeFiles/cpp-fin-proj.dir/flags.make
+CMakeFiles/cpp-fin-proj.dir/controllers/RootCtrl.cc.o: /Users/leolee/Desktop/personal_projects/cpp-fin-proj/controllers/RootCtrl.cc
+CMakeFiles/cpp-fin-proj.dir/controllers/RootCtrl.cc.o: CMakeFiles/cpp-fin-proj.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/leolee/Desktop/personal_projects/cpp-fin-proj/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/cpp-fin-proj.dir/controllers/RootCtrl.cc.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cpp-fin-proj.dir/controllers/RootCtrl.cc.o -MF CMakeFiles/cpp-fin-proj.dir/controllers/RootCtrl.cc.o.d -o CMakeFiles/cpp-fin-proj.dir/controllers/RootCtrl.cc.o -c /Users/leolee/Desktop/personal_projects/cpp-fin-proj/controllers/RootCtrl.cc
+
+CMakeFiles/cpp-fin-proj.dir/controllers/RootCtrl.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/cpp-fin-proj.dir/controllers/RootCtrl.cc.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/leolee/Desktop/personal_projects/cpp-fin-proj/controllers/RootCtrl.cc > CMakeFiles/cpp-fin-proj.dir/controllers/RootCtrl.cc.i
+
+CMakeFiles/cpp-fin-proj.dir/controllers/RootCtrl.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/cpp-fin-proj.dir/controllers/RootCtrl.cc.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/leolee/Desktop/personal_projects/cpp-fin-proj/controllers/RootCtrl.cc -o CMakeFiles/cpp-fin-proj.dir/controllers/RootCtrl.cc.s
 
 CMakeFiles/cpp-fin-proj.dir/controllers/TestCtrl.cc.o: CMakeFiles/cpp-fin-proj.dir/flags.make
-CMakeFiles/cpp-fin-proj.dir/controllers/TestCtrl.cc.o: /Users/leolee/desktop/personal_projects/cpp-fin-proj/controllers/TestCtrl.cc
+CMakeFiles/cpp-fin-proj.dir/controllers/TestCtrl.cc.o: /Users/leolee/Desktop/personal_projects/cpp-fin-proj/controllers/TestCtrl.cc
 CMakeFiles/cpp-fin-proj.dir/controllers/TestCtrl.cc.o: CMakeFiles/cpp-fin-proj.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/leolee/desktop/personal_projects/cpp-fin-proj/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/cpp-fin-proj.dir/controllers/TestCtrl.cc.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cpp-fin-proj.dir/controllers/TestCtrl.cc.o -MF CMakeFiles/cpp-fin-proj.dir/controllers/TestCtrl.cc.o.d -o CMakeFiles/cpp-fin-proj.dir/controllers/TestCtrl.cc.o -c /Users/leolee/desktop/personal_projects/cpp-fin-proj/controllers/TestCtrl.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/leolee/Desktop/personal_projects/cpp-fin-proj/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/cpp-fin-proj.dir/controllers/TestCtrl.cc.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cpp-fin-proj.dir/controllers/TestCtrl.cc.o -MF CMakeFiles/cpp-fin-proj.dir/controllers/TestCtrl.cc.o.d -o CMakeFiles/cpp-fin-proj.dir/controllers/TestCtrl.cc.o -c /Users/leolee/Desktop/personal_projects/cpp-fin-proj/controllers/TestCtrl.cc
 
 CMakeFiles/cpp-fin-proj.dir/controllers/TestCtrl.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/cpp-fin-proj.dir/controllers/TestCtrl.cc.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/leolee/desktop/personal_projects/cpp-fin-proj/controllers/TestCtrl.cc > CMakeFiles/cpp-fin-proj.dir/controllers/TestCtrl.cc.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/leolee/Desktop/personal_projects/cpp-fin-proj/controllers/TestCtrl.cc > CMakeFiles/cpp-fin-proj.dir/controllers/TestCtrl.cc.i
 
 CMakeFiles/cpp-fin-proj.dir/controllers/TestCtrl.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/cpp-fin-proj.dir/controllers/TestCtrl.cc.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/leolee/desktop/personal_projects/cpp-fin-proj/controllers/TestCtrl.cc -o CMakeFiles/cpp-fin-proj.dir/controllers/TestCtrl.cc.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/leolee/Desktop/personal_projects/cpp-fin-proj/controllers/TestCtrl.cc -o CMakeFiles/cpp-fin-proj.dir/controllers/TestCtrl.cc.s
+
+CMakeFiles/cpp-fin-proj.dir/views/balance.cc.o: CMakeFiles/cpp-fin-proj.dir/flags.make
+CMakeFiles/cpp-fin-proj.dir/views/balance.cc.o: views/balance.cc
+CMakeFiles/cpp-fin-proj.dir/views/balance.cc.o: CMakeFiles/cpp-fin-proj.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/leolee/Desktop/personal_projects/cpp-fin-proj/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/cpp-fin-proj.dir/views/balance.cc.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cpp-fin-proj.dir/views/balance.cc.o -MF CMakeFiles/cpp-fin-proj.dir/views/balance.cc.o.d -o CMakeFiles/cpp-fin-proj.dir/views/balance.cc.o -c /Users/leolee/Desktop/personal_projects/cpp-fin-proj/build/views/balance.cc
+
+CMakeFiles/cpp-fin-proj.dir/views/balance.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/cpp-fin-proj.dir/views/balance.cc.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/leolee/Desktop/personal_projects/cpp-fin-proj/build/views/balance.cc > CMakeFiles/cpp-fin-proj.dir/views/balance.cc.i
+
+CMakeFiles/cpp-fin-proj.dir/views/balance.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/cpp-fin-proj.dir/views/balance.cc.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/leolee/Desktop/personal_projects/cpp-fin-proj/build/views/balance.cc -o CMakeFiles/cpp-fin-proj.dir/views/balance.cc.s
 
 # Object files for target cpp-fin-proj
 cpp__fin__proj_OBJECTS = \
 "CMakeFiles/cpp-fin-proj.dir/main.cc.o" \
-"CMakeFiles/cpp-fin-proj.dir/controllers/TestCtrl.cc.o"
+"CMakeFiles/cpp-fin-proj.dir/controllers/BalanceCtrl.cc.o" \
+"CMakeFiles/cpp-fin-proj.dir/controllers/RootCtrl.cc.o" \
+"CMakeFiles/cpp-fin-proj.dir/controllers/TestCtrl.cc.o" \
+"CMakeFiles/cpp-fin-proj.dir/views/balance.cc.o"
 
 # External object files for target cpp-fin-proj
 cpp__fin__proj_EXTERNAL_OBJECTS =
 
 cpp-fin-proj: CMakeFiles/cpp-fin-proj.dir/main.cc.o
+cpp-fin-proj: CMakeFiles/cpp-fin-proj.dir/controllers/BalanceCtrl.cc.o
+cpp-fin-proj: CMakeFiles/cpp-fin-proj.dir/controllers/RootCtrl.cc.o
 cpp-fin-proj: CMakeFiles/cpp-fin-proj.dir/controllers/TestCtrl.cc.o
+cpp-fin-proj: CMakeFiles/cpp-fin-proj.dir/views/balance.cc.o
 cpp-fin-proj: CMakeFiles/cpp-fin-proj.dir/build.make
-cpp-fin-proj: /opt/homebrew/lib/libdrogon.1.9.9.dylib
-cpp-fin-proj: /opt/homebrew/lib/libtrantor.1.5.22.dylib
+cpp-fin-proj: libmodels.a
+cpp-fin-proj: /opt/homebrew/lib/libdrogon.1.9.10.dylib
+cpp-fin-proj: /opt/homebrew/lib/libtrantor.1.5.23.dylib
 cpp-fin-proj: /opt/homebrew/lib/libjsoncpp.dylib
 cpp-fin-proj: CMakeFiles/cpp-fin-proj.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/leolee/desktop/personal_projects/cpp-fin-proj/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable cpp-fin-proj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/leolee/Desktop/personal_projects/cpp-fin-proj/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable cpp-fin-proj"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/cpp-fin-proj.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -126,7 +182,8 @@ CMakeFiles/cpp-fin-proj.dir/clean:
 	$(CMAKE_COMMAND) -P CMakeFiles/cpp-fin-proj.dir/cmake_clean.cmake
 .PHONY : CMakeFiles/cpp-fin-proj.dir/clean
 
-CMakeFiles/cpp-fin-proj.dir/depend:
-	cd /Users/leolee/desktop/personal_projects/cpp-fin-proj/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/leolee/desktop/personal_projects/cpp-fin-proj /Users/leolee/desktop/personal_projects/cpp-fin-proj /Users/leolee/desktop/personal_projects/cpp-fin-proj/build /Users/leolee/desktop/personal_projects/cpp-fin-proj/build /Users/leolee/desktop/personal_projects/cpp-fin-proj/build/CMakeFiles/cpp-fin-proj.dir/DependInfo.cmake "--color=$(COLOR)"
+CMakeFiles/cpp-fin-proj.dir/depend: views/balance.cc
+CMakeFiles/cpp-fin-proj.dir/depend: views/balance.h
+	cd /Users/leolee/Desktop/personal_projects/cpp-fin-proj/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/leolee/Desktop/personal_projects/cpp-fin-proj /Users/leolee/Desktop/personal_projects/cpp-fin-proj /Users/leolee/Desktop/personal_projects/cpp-fin-proj/build /Users/leolee/Desktop/personal_projects/cpp-fin-proj/build /Users/leolee/Desktop/personal_projects/cpp-fin-proj/build/CMakeFiles/cpp-fin-proj.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/cpp-fin-proj.dir/depend
 

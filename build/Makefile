@@ -57,10 +57,10 @@ RM = /opt/homebrew/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/leolee/desktop/personal_projects/cpp-fin-proj
+CMAKE_SOURCE_DIR = /Users/leolee/Desktop/personal_projects/cpp-fin-proj
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/leolee/desktop/personal_projects/cpp-fin-proj/build
+CMAKE_BINARY_DIR = /Users/leolee/Desktop/personal_projects/cpp-fin-proj/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/leolee/desktop/personal_projects/cpp-fin-proj/build/CMakeFiles /Users/leolee/desktop/personal_projects/cpp-fin-proj/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/leolee/Desktop/personal_projects/cpp-fin-proj/build/CMakeFiles /Users/leolee/Desktop/personal_projects/cpp-fin-proj/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/leolee/desktop/personal_projects/cpp-fin-proj/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/leolee/Desktop/personal_projects/cpp-fin-proj/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -117,6 +117,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named models
+
+# Build rule for target.
+models: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 models
+.PHONY : models
+
+# fast build rule for target.
+models/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/models.dir/build.make CMakeFiles/models.dir/build
+.PHONY : models/fast
+
+#=============================================================================
 # Target rules for targets named cpp-fin-proj
 
 # Build rule for target.
@@ -141,6 +154,54 @@ cpp-fin-proj_test: cmake_check_build_system
 cpp-fin-proj_test/fast:
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/cpp-fin-proj_test.dir/build.make test/CMakeFiles/cpp-fin-proj_test.dir/build
 .PHONY : cpp-fin-proj_test/fast
+
+controllers/BalanceCtrl.o: controllers/BalanceCtrl.cc.o
+.PHONY : controllers/BalanceCtrl.o
+
+# target to build an object file
+controllers/BalanceCtrl.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp-fin-proj.dir/build.make CMakeFiles/cpp-fin-proj.dir/controllers/BalanceCtrl.cc.o
+.PHONY : controllers/BalanceCtrl.cc.o
+
+controllers/BalanceCtrl.i: controllers/BalanceCtrl.cc.i
+.PHONY : controllers/BalanceCtrl.i
+
+# target to preprocess a source file
+controllers/BalanceCtrl.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp-fin-proj.dir/build.make CMakeFiles/cpp-fin-proj.dir/controllers/BalanceCtrl.cc.i
+.PHONY : controllers/BalanceCtrl.cc.i
+
+controllers/BalanceCtrl.s: controllers/BalanceCtrl.cc.s
+.PHONY : controllers/BalanceCtrl.s
+
+# target to generate assembly for a file
+controllers/BalanceCtrl.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp-fin-proj.dir/build.make CMakeFiles/cpp-fin-proj.dir/controllers/BalanceCtrl.cc.s
+.PHONY : controllers/BalanceCtrl.cc.s
+
+controllers/RootCtrl.o: controllers/RootCtrl.cc.o
+.PHONY : controllers/RootCtrl.o
+
+# target to build an object file
+controllers/RootCtrl.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp-fin-proj.dir/build.make CMakeFiles/cpp-fin-proj.dir/controllers/RootCtrl.cc.o
+.PHONY : controllers/RootCtrl.cc.o
+
+controllers/RootCtrl.i: controllers/RootCtrl.cc.i
+.PHONY : controllers/RootCtrl.i
+
+# target to preprocess a source file
+controllers/RootCtrl.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp-fin-proj.dir/build.make CMakeFiles/cpp-fin-proj.dir/controllers/RootCtrl.cc.i
+.PHONY : controllers/RootCtrl.cc.i
+
+controllers/RootCtrl.s: controllers/RootCtrl.cc.s
+.PHONY : controllers/RootCtrl.s
+
+# target to generate assembly for a file
+controllers/RootCtrl.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp-fin-proj.dir/build.make CMakeFiles/cpp-fin-proj.dir/controllers/RootCtrl.cc.s
+.PHONY : controllers/RootCtrl.cc.s
 
 controllers/TestCtrl.o: controllers/TestCtrl.cc.o
 .PHONY : controllers/TestCtrl.o
@@ -190,6 +251,54 @@ main.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp-fin-proj.dir/build.make CMakeFiles/cpp-fin-proj.dir/main.cc.s
 .PHONY : main.cc.s
 
+models/Balance.o: models/Balance.cc.o
+.PHONY : models/Balance.o
+
+# target to build an object file
+models/Balance.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/models.dir/build.make CMakeFiles/models.dir/models/Balance.cc.o
+.PHONY : models/Balance.cc.o
+
+models/Balance.i: models/Balance.cc.i
+.PHONY : models/Balance.i
+
+# target to preprocess a source file
+models/Balance.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/models.dir/build.make CMakeFiles/models.dir/models/Balance.cc.i
+.PHONY : models/Balance.cc.i
+
+models/Balance.s: models/Balance.cc.s
+.PHONY : models/Balance.s
+
+# target to generate assembly for a file
+models/Balance.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/models.dir/build.make CMakeFiles/models.dir/models/Balance.cc.s
+.PHONY : models/Balance.cc.s
+
+views/balance.o: views/balance.cc.o
+.PHONY : views/balance.o
+
+# target to build an object file
+views/balance.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp-fin-proj.dir/build.make CMakeFiles/cpp-fin-proj.dir/views/balance.cc.o
+.PHONY : views/balance.cc.o
+
+views/balance.i: views/balance.cc.i
+.PHONY : views/balance.i
+
+# target to preprocess a source file
+views/balance.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp-fin-proj.dir/build.make CMakeFiles/cpp-fin-proj.dir/views/balance.cc.i
+.PHONY : views/balance.cc.i
+
+views/balance.s: views/balance.cc.s
+.PHONY : views/balance.s
+
+# target to generate assembly for a file
+views/balance.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp-fin-proj.dir/build.make CMakeFiles/cpp-fin-proj.dir/views/balance.cc.s
+.PHONY : views/balance.cc.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -200,12 +309,25 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... cpp-fin-proj"
 	@echo "... cpp-fin-proj_test"
+	@echo "... models"
+	@echo "... controllers/BalanceCtrl.o"
+	@echo "... controllers/BalanceCtrl.i"
+	@echo "... controllers/BalanceCtrl.s"
+	@echo "... controllers/RootCtrl.o"
+	@echo "... controllers/RootCtrl.i"
+	@echo "... controllers/RootCtrl.s"
 	@echo "... controllers/TestCtrl.o"
 	@echo "... controllers/TestCtrl.i"
 	@echo "... controllers/TestCtrl.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... models/Balance.o"
+	@echo "... models/Balance.i"
+	@echo "... models/Balance.s"
+	@echo "... views/balance.o"
+	@echo "... views/balance.i"
+	@echo "... views/balance.s"
 .PHONY : help
 
 
